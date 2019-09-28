@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  ul , li {
+      list-style: none;
+  }
+
+  a {
+      text-decoration: none;
+      opacity: .75;
+      color: #909497
+  }
+
+  /* Top Part */
+
+  .top-part {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0 auto;
+      padding: .75rem;
+      border-bottom: .001rem solid black;
+  }
+
+/* Top Part left */
+
+  .top-part-left ul {
+      display: flex;
+  }
+
+  .top-part-left ul li {
+      margin-left: 1rem;
+      
+    
+  }
+
+  .top-part-left ul i {
+      margin-right: .75rem;
+  }
+
+  /* Top Part right */
+
+  .top-part-right ul {
+      display: flex;
+      margin-right: 3rem;
+  }
+
+  .top-part-right ul li {
+      margin-left: 2rem;
+      
+  }
+
+
+  /* /////////////////////////////////////// */
+
+  /* NavBar */
+
+  header {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.2rem;
+      align-items: baseline;
+    
+  }
+  h2 {
+      flex: 1;
+      padding-left: 3rem;
+      font-family: 'Cinzel Decorative', cursive;
+  }
+
+  header nav {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: baseline;
+      flex: 2;
+  }
+
+  header nav li:nth-last-of-type(1) {
+      border: 0.03rem solid black;
+      padding: .5rem 1.3rem;
+  }
+
+
+  /* /////////////////////////////////// */
+/* Image Principal / Main title Content */
+
+a:hover {
+    opacity: 1;
+}
+
+a:btn {
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    background-color: green;
+    opacity: 1;
+    
+}
+
+/* ////////////////////////////// */
+/* this is for every section ! */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 8rem;
+    border: 0.01rem solid green;
+}
+
+/*  //////////////////////*/
+
+.hero {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 75vh;
+}
+
+.hero .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    background-color: green;
+}
+
+.main-title-content h1{
+    font: normal 3.5rem "Open Sans", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: aliceblue;
+}
+
+.main-title-content p {
+    font: normal 1rem "Open Sans", sans-serif;
+    color: aliceblue;
+    margin-bottom: 2rem;
+}
+
+.main-title-content a.btn {
+    padding: .7rem 2rem;
+    border-radius: 4px;
+    color: aliceblue;
+    background-color: green;
+}
+
+
+/* Features area */
+
+section h3.title {
+    font: normal 2rem "Open Sans", sans-serif;
+    margin-bottom: 2rem;
+
+}
+
+section p {
+    max-width: 70%;;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+/* green area  */
+
+.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.features .grid li {
+    padding: 3rem;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.features .grid li i {
+    color: green;
+}
+
+.features .grid li p {
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
