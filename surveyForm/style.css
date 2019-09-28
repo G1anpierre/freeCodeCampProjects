@@ -24,7 +24,7 @@ html {
   }
 
   p, label{
-      font-size: 1.5rem;
+      font-size: 2rem;
   }
 
   ul {
@@ -45,6 +45,86 @@ html {
       border-radius: .4rem;    
   }
 
+  section p {
+      text-align: center;
+      padding-top: 3rem;
+  }
+
   form {
       padding: 4rem;
   }
+
+  form input[type=text], input[type=email], input[type=number] {
+      height: 3rem;
+      width: 15rem;
+      text-align: center;
+  }
+
+.data {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.dropDown {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.dropDown select {
+    height: 3rem;
+    margin-left: 1rem;
+}
+
+.level h4 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.level-selector {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 3rem;
+}
+
+.purpuse {
+    display: flex;
+    justify-content: space-around;
+}
+
+.purpuse ul {
+    line-height: 1.5;
+    padding-top: 2rem;
+
+}
+
+.comments {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.comments label {
+    padding-right: 2rem;
+}
+
+textarea {
+    padding-left: 1rem;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+
+}
+
+button {
+    height: 4rem;
+    width: 15rem;
+    font-size: 2rem;
+    color: white;
+    border-radius: 5px;
+    background-color: #A569BD;
+}
+

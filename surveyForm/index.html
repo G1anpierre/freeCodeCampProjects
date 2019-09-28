@@ -15,74 +15,121 @@
     <section>  
         <p id="description"> Dance School F.Vinazza 'El Arte de Bailar' Inscription Formular</p>
         <form action="" id="survey-form">
-            <label for="name" id="name-label">
-                Name : <input id="name" type="text" placeholder="Enter your name" required>
-            </label>
-            <label for="email" id="email-label">
-                Email: <input id="email" type="email" placeholder="Enter Your email" required>
-            </label>
-            <label for="number" id="number-label" >
-                Age: <input id="number" type="number" placeholder="Age" min="14" max="80">
-            </label>
+            <div class="data">
+                <label for="name" id="name-label">
+                   * Name : <input id="name" type="text" placeholder="Enter your name" required>
+                </label>
+                <label for="email" id="email-label">
+                   * Email: <input id="email" type="email" placeholder="Enter Your email" required>
+                </label>
+                <label for="number" id="number-label" >
+                   * Age: <input id="number" type="number" placeholder="Age" min="14" max="80">
+                </label>
+            </div>
+            <div class="dropDown">
+                    <h4>Which dance course are you interest for:</h4>
+                    <label for="dropdown">
 
-            <label for="dropdown">
-                <h4>Which dance course are interest for:</h4>
-
-                <select name="role" id="dropdown">
-                    <option value="">--Please choose one course--</option>
-                    <option value="salsa">Salsa</option>
-                    <option value="bachata">Bachata</option>
-                    <option value="tango">Tango</option>
-                    <option value="marinera">Marinera</option>
-                    <option value="flamenco">Flamenco</option>
-                </select>
-            </label>
-            <div>
+                        <select name="role" id="dropdown">
+                            <option value="">--Please choose one course--</option>
+                            <option value="salsa">Salsa</option>
+                            <option value="bachata">Bachata</option>
+                            <option value="tango">Tango</option>
+                            <option value="marinera">Marinera</option>
+                            <option value="flamenco">Flamenco</option>
+                        </select>
+                    </label>
+            </div>
+            
+            <div class="level">
                 <h4>Choose your dance level:</h4>
                 
-                <input type="radio" id="basic" name="level" value="basic"> 
-                <label for="basic">Basic</label>
-                <input type="radio" id="inter" name="level" value="intermedio">
-                <label for="inter">Intermedio</label>
-                <input type="radio" id="avanzado" name="level" value="advance">
-                <label for="avanzado">Advanced</label>
+                    
+                <div class="level-selector">
+                    <label for="basic">
+                        <input type="radio" id="basic" name="level" value="basic"> Basic
+                    </label>
+                    <label for="inter">
+                        <input type="radio" id="inter" name="level" value="intermedio"> Intermedio
+                    </label>
+                    <label for="avanzado">
+                        <input type="radio" id="avanzado" name="level" value="advance"> Advanced
+                    </label>
+                </div>
             </div>
-            <div>
-                <h4>What is your principal dance learning purpose : </h4>
-                
-                <ul>
-                    <li>
-                        <label>
-                            <input type="checkbox" value="hobby"> 
-                            Hobby
-                        </label>
-                    </li>
-                    <li>
-                        <label for="">
-                            <input type="checkbox" value="recreational">
-                            Recreational
-                        </label>
-                    </li>
-                    <li>
-                        <label for="">
-                            <input type="checkbox" value="semi-profesional">
-                            Semi-profesional
-                        </label>
-                    </li>
-                    <li>
-                        <label for="">
-                            <input type="checkbox" value="Profesional">
-                            Profesional
-                        </label>
-                    </li>
-                </ul>
-            </div>
-            <div>
+            <div class="purpuse">
+                <div class="first-column">
+                    <h4>What is your principal dance learning purpose : </h4>
+                    <ul>
+                        <li>
+                            <label for="hobby">
+                                <input id="hobby" type="checkbox" value="hobby"> 
+                                Hobby
+                            </label>
+                        </li>
+                        <li>
+                            <label for="recreational">
+                                <input id="recreational" type="checkbox" value="recreational">
+                                Recreational
+                            </label>
+                        </li>
+                        <li>
+                            <label for="semi">
+                                <input id="semi" type="checkbox" value="semi-profesional">
+                                Semi-profesional
+                            </label>
+                        </li>
+                        <li>
+                            <label for="pro">
+                                <input id="pro" type="checkbox" value="Profesional">
+                                Profesional
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="second-column">
+                        <h4>How often do you plan to practice: </h4>
+                        <ul>
+                            <li>
+                                <label for="once">
+                                    <input id="once" type="checkbox" value="once"> 
+                                    Once a Week
+                                </label>
+                            </li>
+                            <li>
+                                <label for="twice">
+                                    <input id="twice" type="checkbox" value="twice">
+                                    Twice a Week
+                                </label>
+                            </li>
+                            <li>
+                                <label for="three">
+                                    <input id="three" type="checkbox" value="three">
+                                    Three times a week
+                                </label>
+                            </li>
+                            <li>
+                                <label for="four">
+                                    <input id="four" type="checkbox" value="four">
+                                    Four times a week
+                                </label>
+                            </li>
+                            <li>
+                                <label for="more">
+                                    <input id="more" type="checkbox" value="more">
+                                        More...
+                                </label>
+                            </li>
+
+                        </ul>
+                 </div>
+            </div>  
+            <div class="comments">
                 
                 <label for="comment"><h4>Any Comments or Suggestions ?</h4></label>
-                <textarea name="comments" id="comment" cols="40" rows="3" placeholder="Enter your comment here..."></textarea>
+                <textarea name="comments" id="comment" cols="40" rows="5" placeholder="Enter your comment here..."></textarea>
             </div>
-            <div>
+            <div class="submit">
                 <button type='submit' id="submit" value="submit"> Submit </button>
             </div>
 
