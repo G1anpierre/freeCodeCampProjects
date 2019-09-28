@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+      background-color: #A569BD
+  }
+
+  h1 {
+      font-size: 4rem;
+  }
+
+  h4 {
+     font-size: 2rem;
+  }
+
+  p, label{
+      font-size: 1.5rem;
+  }
+
+  ul {
+      list-style: none;
+  }
+
+  .title {
+      display: flex;
+      padding: 2rem;
+      justify-content: center;
+      align-items: center;
+  }
+
+  section {
+      background-color: #ECF0F1;
+      width: 80%;
+      margin: 0 auto;
+      border-radius: .4rem;    
+  }
+
+  form {
+      padding: 4rem;
+  }

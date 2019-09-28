@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title> survay form </title>
+</head>
+<body>
+    
+        <div class="title">
+            <h1 id="title"> Survey Form</h1>
+        </div>
+    <section>  
+        <p id="description"> Dance School F.Vinazza 'El Arte de Bailar' Inscription Formular</p>
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">
+                Name : <input id="name" type="text" placeholder="Enter your name" required>
+            </label>
+            <label for="email" id="email-label">
+                Email: <input id="email" type="email" placeholder="Enter Your email" required>
+            </label>
+            <label for="number" id="number-label" >
+                Age: <input id="number" type="number" placeholder="Age" min="14" max="80">
+            </label>
+
+            <label for="dropdown">
+                <h4>Which dance course are interest for:</h4>
+
+                <select name="role" id="dropdown">
+                    <option value="">--Please choose one course--</option>
+                    <option value="salsa">Salsa</option>
+                    <option value="bachata">Bachata</option>
+                    <option value="tango">Tango</option>
+                    <option value="marinera">Marinera</option>
+                    <option value="flamenco">Flamenco</option>
+                </select>
+            </label>
+            <div>
+                <h4>Choose your dance level:</h4>
+                
+                <input type="radio" id="basic" name="level" value="basic"> 
+                <label for="basic">Basic</label>
+                <input type="radio" id="inter" name="level" value="intermedio">
+                <label for="inter">Intermedio</label>
+                <input type="radio" id="avanzado" name="level" value="advance">
+                <label for="avanzado">Advanced</label>
+            </div>
+            <div>
+                <h4>What is your principal dance learning purpose : </h4>
+                
+                <ul>
+                    <li>
+                        <label>
+                            <input type="checkbox" value="hobby"> 
+                            Hobby
+                        </label>
+                    </li>
+                    <li>
+                        <label for="">
+                            <input type="checkbox" value="recreational">
+                            Recreational
+                        </label>
+                    </li>
+                    <li>
+                        <label for="">
+                            <input type="checkbox" value="semi-profesional">
+                            Semi-profesional
+                        </label>
+                    </li>
+                    <li>
+                        <label for="">
+                            <input type="checkbox" value="Profesional">
+                            Profesional
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                
+                <label for="comment"><h4>Any Comments or Suggestions ?</h4></label>
+                <textarea name="comments" id="comment" cols="40" rows="3" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div>
+                <button type='submit' id="submit" value="submit"> Submit </button>
+            </div>
+
+
+        </form>
+    </section>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
