@@ -167,6 +167,7 @@ section {
     font: normal 1rem "Open Sans", sans-serif;
     color: aliceblue;
     margin-bottom: 2rem;
+    margin-left: 5rem;
 }
 
 .main-title-content a.btn {
@@ -284,4 +285,32 @@ form input[type=submit] {
     width: 5rem;
     background-color: aquamarine;
     border-radius: 7px;
+}
+
+@media (max-width : 900px) {
+
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        min-width: 600px;
+       
+    }
+
+    
+}
+
+@media (max-width : 1200px) {
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section.backColor {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: transparent;
+        padding-top: 25rem;
+    }
 }
