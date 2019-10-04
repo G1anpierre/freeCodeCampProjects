@@ -60,7 +60,7 @@ a {
 }
 
 main {
-   width: 70%;
+    max-width: 70%;
     background-color:#242582;
     padding: 2rem;
     margin-left: 30%;
@@ -83,6 +83,8 @@ main section .codeBlock {
     padding: 1.5rem;
     border-radius: .5rem;
     max-width: 50%;
+    overflow: auto;
+    min-width: 300px;
 }
 
 h3 {
@@ -109,14 +111,26 @@ p {
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
+    
     body {
-        display: flex;
-        flex-direction: column;
+        
     }
 
-    nav {
-        
-        text-align: center;
+    main {
+        display: block;
+        max-width: 100%;
+        margin: 0px;
+        position: relative;
+        top: 270px;
     }
+
+    .fixed-nav-bar {
+        position: absolute;
+        margin: 0%;
+        width: 100vw;
+        max-height: 270px;
+        border-bottom: 5px solid gray;
+    }
+    
 }
